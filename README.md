@@ -7,24 +7,27 @@ Vue.js is an awesome JavaScript Framework for building Frontend Applications! Vu
 Lets compare Vanilla Javascript vs Vue3 
 
 - **Vanilla Javascript**
+```
+const buttonElement = document.querySelector('button');
+const inputElement = document.querySelector('input');
+const listElement = document.querySelector('ul');
 
-const buttonEl = document.querySelector('button');
-const inputEl = document.querySelector('input');
-const listEl = document.querySelector('ul');
-
-function addGoal() {
-  const enteredValue = inputEl.value;
-  const listItemEl = document.createElement('li');
-  listItemEl.textContent = enteredValue;
-  listEl.appendChild(listItemEl);
-  inputEl.value = '';
+function addTodo() {
+  const enteredValue = inputElement.value;
+  const listItemElement = document.createElement('li');
+  listItemElement.textContent = enteredValue;
+  listEl.appendChild(listItemElement);
+  inputElement.value = '';
 }
 
-buttonEl.addEventListener('click', addGoal);
+buttonElement.addEventListener('click', addTodo);
 
 
+
+```
 - **Vue3**
-  
+
+```  
 Vue.createApp({
   data() {
     return {
@@ -39,5 +42,5 @@ Vue.createApp({
     }
   }
 }).mount('#app')
-
+```
 

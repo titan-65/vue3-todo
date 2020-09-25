@@ -15,23 +15,17 @@ Vue.createApp({
 
 
 
-// const buttonEl = document.querySelector('button');
-// const inputEl = document.querySelector('input');
-// const listEl = document.querySelector('ul');
+// const buttonElement = document.querySelector('button');
+// const inputElement = document.querySelector('input');
+// const listElement = document.querySelector('ul');
 
-
-// /**
-//  * @name addTodo
-//  * @description
-//  * @deprecated
-//  */
-// function addGoal() {
-//   const enteredValue = inputEl.value;
-//   const listItemEl = document.createElement('li');
-//   listItemEl.textContent = enteredValue;
-//   listEl.appendChild(listItemEl);
-//   inputEl.value = '';
+// function addTodo() {
+//   const enteredValue = inputElement.value;
+//   const listItemElement = document.createElement('li');
+//   listItemElement.textContent = enteredValue;
+//   listEl.appendChild(listItemElement);
+//   inputElement.value = '';
 // }
 
-// buttonEl.addEventListener('click', addGoal);
+// buttonElement.addEventListener('click', addTodo);
 
