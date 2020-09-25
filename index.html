@@ -11,12 +11,12 @@
   <body style="background: rgb(0, 0, 0);">
     <div class="layout_main">
         <h1 class="hero_head">
-        Vue.js
+        Vue.js Simple Todo
       </h1>
       <div id="app">
         <div class="container">
-          <label for="goal">Todo</label>
-          <input type="text" id="goal"  v-model="enteredValue"/>
+          <label for="goal">What would you like to do?</label>
+          <input type="text" id="goal" placeholder="e.g. Create demo app at 2:30pm" v-model="enteredValue"/>
           <button class="btn btn-primary" style="margin-top: 15px;" v-on:click="addTodo">Add Goal</button>
         </div>
         <ul>
